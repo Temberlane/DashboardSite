@@ -1,0 +1,16 @@
+{
+  "degreesConferred": [
+    { "year": 2020, "Chemical": 137, "ComputerScience": 309, "Civil": 216, "Electrical": 439, "Mechanical": 326 },
+    { "year": 2021, "Chemical": 150, "ComputerScience": 388, "Civil": 234, "Electrical": 417, "Mechanical": 321 },
+    { "year": 2022, "Chemical": 119, "ComputerScience": 327, "Civil": 196, "Electrical": 527, "Mechanical": 311 },
+    { "year": 2023, "Chemical": 122, "ComputerScience": 408, "Civil": 206, "Electrical": 533, "Mechanical": 299 },
+    { "year": 2024, "Chemical": 133, "ComputerScience": 511, "Civil": 260, "Electrical": 554, "Mechanical": 284 }
+  ],
+  "retentionRates": [
+    { "cohort": 2019, "Female": 90, "Male": 88, "International": 86, "Domestic": 90 },
+    { "cohort": 2020, "Female": 90, "Male": 86, "International": 87, "Domestic": 89 },
+    { "cohort": 2021, "Female": 87, "Male": 84, "International": 83, "Domestic": 86 },
+    { "cohort": 2022, "Female": 88, "Male": 86, "International": 83, "Domestic": 88 },
+    { "cohort": 2023, "Female": 88, "Male": 86, "International": 78, "Domestic": 89 }
+  ]
+}

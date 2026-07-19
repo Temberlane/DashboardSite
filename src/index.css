@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --color-garnet: #8f001a;
+  --color-garnet-deep: #6d0014;
+  --color-garnet-bright: #b3122f;
+  --color-paper: #f4f2ef;
+  --color-card: #ffffff;
+  --color-ink: #1c1a1a;
+  --color-ink-2: #59544f;
+  --color-ink-3: #8d8983;
+  --color-hairline: #e6e3de;
+  --color-up: #006300;
+  --color-down: #d03b3b;
+}
+
+.font-expanded {
+  font-stretch: 125%;
+}
+
+.font-condensed {
+  font-stretch: 88%;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-garnet-bright);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

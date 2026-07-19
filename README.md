@@ -1,16 +1,31 @@
-# React + Vite
+# uOttawa Engineering Outcomes Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A bilingual (English/French) interactive dashboard built for SEG3125 Assignment 5. It presents University of Ottawa Faculty of Engineering data: undergraduate degrees conferred by program (2020–2024) and year-2 retention rates by demographic group.
 
-Currently, two official plugins are available:
+**Live site:** https://dashboardsite-dusky.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- **Line chart** of degrees conferred per program, with toggles to show or hide individual programs
+- **Bar chart** of year-2 retention rates, with a cohort selector and an optional side-by-side cohort comparison
+- **English/French toggle** that translates the full interface, including chart axes, legends, and tooltips, with locale-aware number and percentage formatting (`90%` vs `90 %`)
+- Accessible by design: keyboard-operable controls, an equivalent data table under each chart, and reduced-motion support
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech stack
 
-## Expanding the Oxlint configuration
+- [React 19](https://react.dev/) + [Vite](https://vite.dev/)
+- [Recharts](https://recharts.org/) for the charts
+- [Tailwind CSS 4](https://tailwindcss.com/) for styling
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Running locally
+
+```bash
+npm install
+npm run dev
+```
+
+`npm run build` outputs a production build to `dist/`.
+
+## Data
+
+Chart data lives in `src/data/engineeringMetrics.json` and is based on uOttawa institutional fact books (see `public/uottawa enrollment details/` for the source documents). Figures are illustrative.
